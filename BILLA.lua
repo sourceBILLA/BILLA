@@ -2720,6 +2720,15 @@ end
 end
 end,nil)   
 end
+if text == 'مطور السورس' or text == 'مبرمج السورس' or text == 'مطور سورس' then
+Text = [[
+≪━━━━━━𝑩𝑰━━━━━━≫
+⌯︙↬[DEVELOPER](t.me/EE66i)
+≪━━━━━━𝑩𝑰━━━━━━≫
+]]
+send(msg.chat_id_, msg.id_,Text)
+return false
+end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
